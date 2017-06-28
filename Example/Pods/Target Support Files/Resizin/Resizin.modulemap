@@ -1,0 +1,6 @@
+framework module Resizin {
+  umbrella header "Resizin-umbrella.h"
+
+  export *
+  module * { export * }
+}
