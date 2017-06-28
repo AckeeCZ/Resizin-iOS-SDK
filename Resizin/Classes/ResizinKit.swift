@@ -11,7 +11,6 @@ import UIKit
 public class ResizinManager: NSObject {
     
     public enum Environment {
-        case development
         case production
         case custom(String)
         
