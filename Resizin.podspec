@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Manipulate with images.
+Manipulate with images
                        DESC
 
   s.homepage         = 'https://github.com/AckeeCZ/Resizin-iOS-SDK'
