@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ResizinSettings Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/ResizinSettings" class="dashAnchor"></a>
+    <a title="ResizinSettings Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (48% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ResizinSettings Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ResizinManager.html">ResizinManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ResizinManager/Environment.html">– Environment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ResizinSettings.html">ResizinSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResizinSettings/CropMode.html">– CropMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResizinSettings/Gravity.html">– Gravity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResizinSettings/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResizinSettings/Rotation.html">– Rotation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResizinSettings.html#/s:VV7Resizin15ResizinSettings6Border">– Border</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ResizinSettings</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResizinSettings</span></code></pre>
+
+                </div>
+              </div>
+            <p>Struct for defining all image settings.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Enums"></a>
+                <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
+                <a href="#/Enums">
+                  <h3 class="section-name">Enums</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV7Resizin15ResizinSettings8CropMode"></a>
+                    <a name="//apple_ref/swift/Enum/CropMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV7Resizin15ResizinSettings8CropMode">CropMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Crop mode</p>
+
+<ul>
+<li>fill - maintain original proportions and resize via smallest dimension, crop the largest.</li>
+<li>fit - mantain original proportions and resize so image fits wholly into new dimension.</li>
+<li>pad - maintain original proportions, padding added on top/bottom or left/right as needed (color is configurable)</li>
+<li>scale - scales image to fit within requested dimensions</li>
+<li>cut - no resize, crop to gravity or x/y scale, force image to be new dimensions (squishing the image)</li>
+<li>face - crops photo around face</li>
+</ul>
+
+                        <a href="../Structs/ResizinSettings/CropMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CropMode</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV7Resizin15ResizinSettings7Gravity"></a>
+                    <a name="//apple_ref/swift/Enum/Gravity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV7Resizin15ResizinSettings7Gravity">Gravity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gives the priority to the desired portion of image while cropping</p>
+
+                        <a href="../Structs/ResizinSettings/Gravity.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Gravity</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV7Resizin15ResizinSettings6Filter"></a>
+                    <a name="//apple_ref/swift/Enum/Filter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV7Resizin15ResizinSettings6Filter">Filter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applies desired filter on the image</p>
+
+                        <a href="../Structs/ResizinSettings/Filter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Filter</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OV7Resizin15ResizinSettings8Rotation"></a>
+                    <a name="//apple_ref/swift/Enum/Rotation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OV7Resizin15ResizinSettings8Rotation">Rotation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rotates the image by selected degrees</p>
+
+                        <a href="../Structs/ResizinSettings/Rotation.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Rotation</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VV7Resizin15ResizinSettings6Border"></a>
+                    <a name="//apple_ref/swift/Struct/Border" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VV7Resizin15ResizinSettings6Border">Border</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds border (in pixels) to desired sides of the image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Border</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings5widthGSqSi_"></a>
+                    <a name="//apple_ref/swift/Property/width" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings5widthGSqSi_">width</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Desired width of the image in pixels</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings4sizeGSqSi_"></a>
+                    <a name="//apple_ref/swift/Property/size" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings4sizeGSqSi_">size</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Width and height of the image in pixels</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings6heightGSqSi_"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings6heightGSqSi_">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Height of the image in pixels</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings8cropModeGSqOS0_8CropMode_"></a>
+                    <a name="//apple_ref/swift/Property/cropMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings8cropModeGSqOS0_8CropMode_">cropMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CropMode</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cropMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings/CropMode.html">CropMode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings7gravityGSqOS0_7Gravity_"></a>
+                    <a name="//apple_ref/swift/Property/gravity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings7gravityGSqOS0_7Gravity_">gravity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gravity</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">gravity</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings/Gravity.html">Gravity</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings7filtersGSqGSaOS0_6Filter__"></a>
+                    <a name="//apple_ref/swift/Property/filters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings7filtersGSqGSaOS0_6Filter__">filters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of filters that should be applied to the image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">filters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ResizinSettings/Filter.html">Filter</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings7qualityGSqSi_"></a>
+                    <a name="//apple_ref/swift/Property/quality" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings7qualityGSqSi_">quality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Quality of the image (0-99)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings7upscaleGSqSb_"></a>
+                    <a name="//apple_ref/swift/Property/upscale" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings7upscaleGSqSb_">upscale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upscales the image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">upscale</span> <span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings8rotationGSqOS0_8Rotation_"></a>
+                    <a name="//apple_ref/swift/Property/rotation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings8rotationGSqOS0_8Rotation_">rotation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rotation of the image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rotation</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings/Rotation.html">Rotation</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings10backgroundGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/background" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings10backgroundGSqSS_">background</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Background color of the image in hex format</p>
+<pre class="highlight plaintext"><code>background = "ff0e3a"
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">background</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings6borderGSqVS0_6Border_"></a>
+                    <a name="//apple_ref/swift/Property/border" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings6borderGSqVS0_6Border_">border</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Image border</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">border</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings.html#/s:VV7Resizin15ResizinSettings6Border">Border</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings5alphaSi"></a>
+                    <a name="//apple_ref/swift/Property/alpha" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings5alphaSi">alpha</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Alpha value of background color (0-100)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">100</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Inits"></a>
+                <a name="//apple_ref/swift/Section/Inits" class="dashAnchor"></a>
+                <a href="#/Inits">
+                  <h3 class="section-name">Inits</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV7Resizin15ResizinSettingscFT5widthGSqSi_6heightGSqSi_4sizeGSqSi_8cropModeGSqOS0_8CropMode_7gravityGSqOS0_7Gravity_7filtersGSqGSaOS0_6Filter__7qualityGSqSi_8rotationGSqOS0_8Rotation_7upscaleGSqSb_10backgroundGSqSS_5alphaSi6borderGSqVS0_6Border__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(width:height:size:cropMode:gravity:filters:quality:rotation:upscale:background:alpha:border:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV7Resizin15ResizinSettingscFT5widthGSqSi_6heightGSqSi_4sizeGSqSi_8cropModeGSqOS0_8CropMode_7gravityGSqOS0_7Gravity_7filtersGSqGSaOS0_6Filter__7qualityGSqSi_8rotationGSqOS0_8Rotation_7upscaleGSqSb_10backgroundGSqSS_5alphaSi6borderGSqVS0_6Border__S0_">init(width:height:size:cropMode:gravity:filters:quality:rotation:upscale:background:alpha:border:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a new settings for image modifications. All parameters are optional</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cropMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings/CropMode.html">CropMode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gravity</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings/Gravity.html">Gravity</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">filters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ResizinSettings/Filter.html">Filter</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rotation</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings/Rotation.html">Rotation</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">upscale</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">background</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="nv">border</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResizinSettings.html#/s:VV7Resizin15ResizinSettings6Border">Border</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Desired width of the image in pixels</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Desired height of the image in pixels</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Width and height of the image in pixels</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cropMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>CropMode</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gravity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Gravity of the image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of filters that should be applied to the image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Quality of the image (0-99)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Rotation of image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>upscale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Upscale value of image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>background</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Background color of the image in hex format without #</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alpha</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Alpha value of background color (0-100)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>border</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Image border</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Helpers"></a>
+                <a name="//apple_ref/swift/Section/Helpers" class="dashAnchor"></a>
+                <a href="#/Helpers">
+                  <h3 class="section-name">Helpers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV7Resizin15ResizinSettings9modifiersGSaSS_"></a>
+                    <a name="//apple_ref/swift/Property/modifiers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV7Resizin15ResizinSettings9modifiersGSaSS_">modifiers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Modifiers that will be applied on the image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">modifiers</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-06-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

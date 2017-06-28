@@ -1,0 +1,215 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinKit.swift",
+      "line": 16,
+      "symbol": "ResizinManager.Environment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinKit.swift",
+      "line": 17,
+      "symbol": "ResizinManager.Environment.production",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinKit.swift",
+      "line": 18,
+      "symbol": "ResizinManager.Environment.custom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinKit.swift",
+      "line": 74,
+      "symbol": "ResizinManager.init(projectName:baseURL:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 25,
+      "symbol": "ResizinSettings.CropMode.fill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 26,
+      "symbol": "ResizinSettings.CropMode.fit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 27,
+      "symbol": "ResizinSettings.CropMode.pad",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 28,
+      "symbol": "ResizinSettings.CropMode.scale",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 29,
+      "symbol": "ResizinSettings.CropMode.cut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 30,
+      "symbol": "ResizinSettings.CropMode.face",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 38,
+      "symbol": "ResizinSettings.Gravity.north",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 39,
+      "symbol": "ResizinSettings.Gravity.south",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 40,
+      "symbol": "ResizinSettings.Gravity.east",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 41,
+      "symbol": "ResizinSettings.Gravity.west",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 42,
+      "symbol": "ResizinSettings.Gravity.center",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 43,
+      "symbol": "ResizinSettings.Gravity.northeast",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 44,
+      "symbol": "ResizinSettings.Gravity.northwest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 45,
+      "symbol": "ResizinSettings.Gravity.southeast",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 46,
+      "symbol": "ResizinSettings.Gravity.southwest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 47,
+      "symbol": "ResizinSettings.Gravity.face",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 54,
+      "symbol": "ResizinSettings.Filter.grayscale",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 55,
+      "symbol": "ResizinSettings.Filter.sharpen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 56,
+      "symbol": "ResizinSettings.Filter.blur",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 57,
+      "symbol": "ResizinSettings.Filter.negative",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 58,
+      "symbol": "ResizinSettings.Filter.edge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 59,
+      "symbol": "ResizinSettings.Filter.gauss",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 66,
+      "symbol": "ResizinSettings.Rotation.up",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 67,
+      "symbol": "ResizinSettings.Rotation.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 68,
+      "symbol": "ResizinSettings.Rotation.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tomasholka/Desktop/Resizin/Resizin/ResizinSettings.swift",
+      "line": 69,
+      "symbol": "ResizinSettings.Rotation.down",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/tomasholka/Desktop/Resizin"
+}
