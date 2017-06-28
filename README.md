@@ -1,6 +1,5 @@
 # Resizin
 
-[![CI Status](http://img.shields.io/travis/Tomas Holka/Resizin.svg?style=flat)](https://travis-ci.org/Tomas Holka/Resizin)
 [![Version](https://img.shields.io/cocoapods/v/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
 [![License](https://img.shields.io/cocoapods/l/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
 [![Platform](https://img.shields.io/cocoapods/p/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
