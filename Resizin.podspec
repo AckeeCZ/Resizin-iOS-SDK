@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 Manipulate with images.
                        DESC
 
-  s.homepage         = 'https://github.com/Tomas Holka/Resizin'
+  s.homepage         = 'https://gitlab.ack.ee/Ackee/Resizin'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jan Mísař' => 'misar.jan@gmail.com' }
-  s.source           = { :git => 'https://gitlab.ack.ee/Ackee/Resizin.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@gitlab.ack.ee:Ackee/Resizin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

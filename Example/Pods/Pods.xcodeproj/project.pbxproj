@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		13C2D24EB153BC93D4A1B28D5353E32E /* Resizin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4E3C75B38FDC7E390D23798AE94459 /* Resizin-dummy.m */; };
 		172CD053A05D1DB39452D39319F297BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1C31E5C41F03A1BD001F9C28 /* ResizinKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31E5C21F03A1BD001F9C28 /* ResizinKit.swift */; };
+		1C31E5C51F03A1BD001F9C28 /* ResizinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31E5C31F03A1BD001F9C28 /* ResizinSettings.swift */; };
 		2A6523B3C8D124AC6A2523E9B96C21F1 /* Pods-Resizin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B62B7EF6CD51E9D7D1038E276E7746 /* Pods-Resizin_Tests-dummy.m */; };
 		30F1E691231842A1C6A12C16C40AF944 /* Pods-Resizin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C51968F2195BEFD4B104B93BE26ED3 /* Pods-Resizin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E02735C2E664B21221338F25EE6FD6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7A59A0B6E52C7258843A089C54429379 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EC12A5FF009E92CFD46430560CF7A7 /* ReplaceMe.swift */; };
 		850B705E0CC60037E60CAD379CE5C6DB /* Resizin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B892318E89409DD6039242CD7E5BD25F /* Resizin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,24 +31,25 @@
 		08B20CDA0C58813C6CF29601DA2E3625 /* Pods-Resizin_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Resizin_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		175E47240C58E85B34482823D9FEA28F /* Pods-Resizin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Resizin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1BA4C99C8987B8AD8AA55653615A9345 /* Resizin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Resizin.xcconfig; sourceTree = "<group>"; };
+		1C31E5C21F03A1BD001F9C28 /* ResizinKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizinKit.swift; sourceTree = "<group>"; };
+		1C31E5C31F03A1BD001F9C28 /* ResizinSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizinSettings.swift; sourceTree = "<group>"; };
 		2BA4B26AC3D521A9E4CFC932BB1C4F2B /* Pods-Resizin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Resizin_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		352DA59B2CBB3FE24160C10FD176E7C7 /* Resizin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Resizin.framework; path = Resizin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		352DA59B2CBB3FE24160C10FD176E7C7 /* Resizin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resizin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E25DCE608E854E4F7BA3FF8810E3DB4 /* Pods-Resizin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Resizin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		69BD21CD0D9612E4F940321C7DDE8A58 /* Resizin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Resizin-prefix.pch"; sourceTree = "<group>"; };
 		6E48EA7CA5E779B0F381DADA2FE2C537 /* Pods-Resizin_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Resizin_Tests-resources.sh"; sourceTree = "<group>"; };
 		87A39C9A14863FBF436F2A8177822C61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E6DF5596C3CA7EE8F7275BD270D3036 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96B62B7EF6CD51E9D7D1038E276E7746 /* Pods-Resizin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Resizin_Tests-dummy.m"; sourceTree = "<group>"; };
-		B8347C1AF9735B0AB0D161719D35EEED /* Pods_Resizin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Resizin_Tests.framework; path = "Pods-Resizin_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8347C1AF9735B0AB0D161719D35EEED /* Pods_Resizin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resizin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B892318E89409DD6039242CD7E5BD25F /* Resizin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Resizin-umbrella.h"; sourceTree = "<group>"; };
 		BB4E3C75B38FDC7E390D23798AE94459 /* Resizin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Resizin-dummy.m"; sourceTree = "<group>"; };
 		C8C51968F2195BEFD4B104B93BE26ED3 /* Pods-Resizin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Resizin_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D5EC12A5FF009E92CFD46430560CF7A7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		DE49371442C8C33BEAD47F25E977A1F7 /* Pods-Resizin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Resizin_Tests.modulemap"; sourceTree = "<group>"; };
+		DE49371442C8C33BEAD47F25E977A1F7 /* Pods-Resizin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Resizin_Tests.modulemap"; sourceTree = "<group>"; };
 		E7980418258F9439402DF534C9A7E276 /* Pods-Resizin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Resizin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EDFC4114CB5BF8267507D1E1EA0C062B /* Resizin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Resizin.modulemap; sourceTree = "<group>"; };
+		EDFC4114CB5BF8267507D1E1EA0C062B /* Resizin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Resizin.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,6 @@
 			children = (
 				6016B0C3D1B6AA26505D17669D3932E6 /* Classes */,
 			);
-			name = Resizin;
 			path = Resizin;
 			sourceTree = "<group>";
 		};
@@ -100,9 +101,9 @@
 		6016B0C3D1B6AA26505D17669D3932E6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D5EC12A5FF009E92CFD46430560CF7A7 /* ReplaceMe.swift */,
+				1C31E5C21F03A1BD001F9C28 /* ResizinKit.swift */,
+				1C31E5C31F03A1BD001F9C28 /* ResizinSettings.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -247,6 +248,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0F1A23F278F187F8ED6D9405ED255B15 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -271,8 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A59A0B6E52C7258843A089C54429379 /* ReplaceMe.swift in Sources */,
 				13C2D24EB153BC93D4A1B28D5353E32E /* Resizin-dummy.m in Sources */,
+				1C31E5C51F03A1BD001F9C28 /* ResizinSettings.swift in Sources */,
+				1C31E5C41F03A1BD001F9C28 /* ResizinKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BA4C99C8987B8AD8AA55653615A9345 /* Resizin.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -504,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BA4C99C8987B8AD8AA55653615A9345 /* Resizin.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
