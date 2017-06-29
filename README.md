@@ -21,7 +21,7 @@ pod "Resizin"
 
 ## Author
 
-Tomas Holka, tomas.holka@ackee.cz
+Ackee team
 
 ## License
 
