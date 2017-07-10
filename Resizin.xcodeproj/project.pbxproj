@@ -10,6 +10,7 @@
 		D2F2CE131F13BD7800456C1B /* Resizin.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F2CE101F13BD3C00456C1B /* Resizin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2F2CE161F13C35C00456C1B /* ResizinKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE141F13C35C00456C1B /* ResizinKit.swift */; };
 		D2F2CE171F13C35C00456C1B /* ResizinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE151F13C35C00456C1B /* ResizinSettings.swift */; };
+		D2F2CE1B1F13C61500456C1B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1A1F13C61500456C1B /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		D2F2CE101F13BD3C00456C1B /* Resizin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resizin.h; path = "Supporting Files/Resizin.h"; sourceTree = "<group>"; };
 		D2F2CE141F13C35C00456C1B /* ResizinKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizinKit.swift; sourceTree = "<group>"; };
 		D2F2CE151F13C35C00456C1B /* ResizinSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizinSettings.swift; sourceTree = "<group>"; };
+		D2F2CE1A1F13C61500456C1B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D2F2CE141F13C35C00456C1B /* ResizinKit.swift */,
 				D2F2CE151F13C35C00456C1B /* ResizinSettings.swift */,
+				D2F2CE1A1F13C61500456C1B /* Result.swift */,
 			);
 			name = Resizin;
 			path = Resizin/Classes;
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F2CE1B1F13C61500456C1B /* Result.swift in Sources */,
 				D2F2CE161F13C35C00456C1B /* ResizinKit.swift in Sources */,
 				D2F2CE171F13C35C00456C1B /* ResizinSettings.swift in Sources */,
 			);
