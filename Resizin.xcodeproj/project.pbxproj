@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D206C7CD1F14C1F800D03133 /* ResizinKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE141F13C35C00456C1B /* ResizinKit.swift */; };
+		D206C7CE1F14C1F800D03133 /* ResizinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE151F13C35C00456C1B /* ResizinSettings.swift */; };
+		D206C7CF1F14C1F800D03133 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1A1F13C61500456C1B /* Result.swift */; };
+		D206C7D01F14C1F800D03133 /* ResizinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */; };
+		D206C7D11F14C1F800D03133 /* ImageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1E1F13C81200456C1B /* ImageReference.swift */; };
+		D206C7D21F14C1F800D03133 /* RequstBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */; };
 		D2F2CE131F13BD7800456C1B /* Resizin.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F2CE101F13BD3C00456C1B /* Resizin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2F2CE161F13C35C00456C1B /* ResizinKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE141F13C35C00456C1B /* ResizinKit.swift */; };
-		D2F2CE171F13C35C00456C1B /* ResizinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE151F13C35C00456C1B /* ResizinSettings.swift */; };
-		D2F2CE1B1F13C61500456C1B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1A1F13C61500456C1B /* Result.swift */; };
-		D2F2CE1D1F13C7CC00456C1B /* ResizinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */; };
-		D2F2CE1F1F13C81300456C1B /* ImageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1E1F13C81200456C1B /* ImageReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D2F2CE1A1F13C61500456C1B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizinError.swift; sourceTree = "<group>"; };
 		D2F2CE1E1F13C81200456C1B /* ImageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageReference.swift; sourceTree = "<group>"; };
+		D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequstBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D2F2CE1A1F13C61500456C1B /* Result.swift */,
 				D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */,
 				D2F2CE1E1F13C81200456C1B /* ImageReference.swift */,
+				D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */,
 			);
 			name = Resizin;
 			path = Resizin/Classes;
@@ -157,11 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F2CE1B1F13C61500456C1B /* Result.swift in Sources */,
-				D2F2CE161F13C35C00456C1B /* ResizinKit.swift in Sources */,
-				D2F2CE171F13C35C00456C1B /* ResizinSettings.swift in Sources */,
-				D2F2CE1D1F13C7CC00456C1B /* ResizinError.swift in Sources */,
-				D2F2CE1F1F13C81300456C1B /* ImageReference.swift in Sources */,
+				D206C7CF1F14C1F800D03133 /* Result.swift in Sources */,
+				D206C7CD1F14C1F800D03133 /* ResizinKit.swift in Sources */,
+				D206C7CE1F14C1F800D03133 /* ResizinSettings.swift in Sources */,
+				D206C7D01F14C1F800D03133 /* ResizinError.swift in Sources */,
+				D206C7D11F14C1F800D03133 /* ImageReference.swift in Sources */,
+				D206C7D21F14C1F800D03133 /* RequstBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
