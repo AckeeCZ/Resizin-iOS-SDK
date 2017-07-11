@@ -10,17 +10,15 @@
 public struct ResizinSettings {
     
     // MARK: Enums
-    
-    /**
-     Crop mode
-     
-     - fill - maintain original proportions and resize via smallest dimension, crop the largest.
-     - fit - mantain original proportions and resize so image fits wholly into new dimension.
-     - pad - maintain original proportions, padding added on top/bottom or left/right as needed (color is configurable)
-     - scale - scales image to fit within requested dimensions
-     - cut - no resize, crop to gravity or x/y scale, force image to be new dimensions (squishing the image)
-     - face - crops photo around face
-     */
+
+    /// Crop mode
+    ///
+    /// - fill: Maintain original proportions and resize via smallest dimension, crop the largest.
+    /// - fit: Mantain original proportions and resize so image fits wholly into new dimension.
+    /// - pad: Maintain original proportions, padding added on top/bottom or left/right as needed (color is configurable)
+    /// - scale: Scales image to fit within requested dimensions
+    /// - cut: No resize, crop to gravity or x/y scale, force image to be new dimensions (squishing the image)
+    /// - face: Crops photo around face
     public enum CropMode: String {
         case fill
         case fit
@@ -29,11 +27,8 @@ public struct ResizinSettings {
         case cut
         case face
     }
-    
-    
-    /**
-     Gives the priority to the desired portion of image while cropping
-     */
+
+    /// Gives the priority to the desired portion of image while cropping
     public enum Gravity: String {
         case north
         case south
@@ -46,10 +41,8 @@ public struct ResizinSettings {
         case southwest
         case face
     }
-    
-    /**
-     Applies desired filter on the image
-     */
+
+    /// Applies desired filter on the image
     public enum Filter: String {
         case grayscale
         case sharpen
@@ -59,19 +52,15 @@ public struct ResizinSettings {
         case gauss
     }
     
-    /**
-     Rotates the image by selected degrees
-     */
+    /// Rotates the image by selected degrees
     public enum Rotation: String {
         case up = "360"
         case left = "270"
         case right = "90"
         case down = "180"
     }
-    
-    /**
-     Adds border (in pixels) to desired sides of the image
-     */
+
+    /// Adds border (in pixels) to desired sides of the image
     public struct Border {
         let top: Int
         let left: Int
@@ -80,10 +69,8 @@ public struct ResizinSettings {
     }
     
     // MARK: Properties
-    
-    /**
-     Desired width of the image in pixels
-     */
+
+    /// Desired width of the image in pixels
     public var width: Int? = nil
     
     /// Width and height of the image in pixels
@@ -115,14 +102,12 @@ public struct ResizinSettings {
     
     /// Rotation of the image
     public var rotation: Rotation? = nil
-    
-    /**
-     Background color of the image in hex format
-     
-     ````
-     background = "ff0e3a"
-     ````
-     */
+
+    /// Background color of the image in hex format
+    ///
+    /// ````
+    /// background = "ff0e3a"
+    /// ````
     public var background: String? = nil
     
     /// Image border
@@ -136,24 +121,22 @@ public struct ResizinSettings {
     }
     
     // MARK: Inits
-    
-    /**
-     Initializes a new settings for image modifications. All parameters are optional
-     
-     - parameter width: Desired width of the image in pixels
-     - parameter height: Desired height of the image in pixels
-     - parameter size: Width and height of the image in pixels
-     - parameter cropMode: CropMode
-     - parameter gravity: Gravity of the image
-     - parameter filters: Array of filters that should be applied to the image
-     - parameter quality: Quality of the image (0-99)
-     - parameter rotation: Rotation of image
-     - parameter upscale: Upscale value of image
-     - parameter background: Background color of the image in hex format without #
-     - parameter alpha: Alpha value of background color (0-100)
-     - parameter border: Image border
-     
-     */
+
+    /// Initializes a new settings for image modifications. All parameters are optional
+    ///
+    /// - Parameters:
+    ///   - width: Desired width of the image in pixels
+    ///   - height: Desired height of the image in pixels
+    ///   - size: Width and height of the image in pixels
+    ///   - cropMode: CropMode
+    ///   - gravity: Gravity of the image
+    ///   - filters: Array of filters that should be applied to the image
+    ///   - quality: Quality of the image (0-99)
+    ///   - rotation: Rotation of image
+    ///   - upscale: Upscale value of image
+    ///   - background: Background color of the image in hex format without #
+    ///   - alpha: Alpha value of background color (0-100)
+    ///   - border: Image border
     public init(width: Int? = nil, height: Int? = nil, size: Int? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil) {
         self.size = size
         self.width = width

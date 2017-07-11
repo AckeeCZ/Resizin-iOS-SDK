@@ -13,6 +13,10 @@ import UIKit
 /// Shared manager
 public class ResizinManager: NSObject {
 
+    /// Library server environment
+    ///
+    /// - production: Preset production environment
+    /// - custom: Custom server
     public enum Environment {
         case production
         case custom(String)
@@ -25,20 +29,18 @@ public class ResizinManager: NSObject {
         }
     }
     
-    /// Image server URL. Change it only in very specific situations. Standard URLs for development and production is set by default.
-    public var baseURL: String
+    /// Image server URL. Change it only in very specific situations. Standard URLs for development and production is set by default
+    public var baseURL: URL
     
     /// URL path component to be appended to base URL
     public var projectName: String
 
     /// Image uploading service
     private let uploader: Uploader
-    
-    /**
-     Returns shared image manager.
-     
-     **You must call setupSharedManagerWithProjectName(_) before use!**
-     */
+
+    /// Returns shared image manager.
+    ///
+    /// **You must call setupSharedManagerWithProjectName(_) before use!**
     public static var sharedManager: ResizinManager {
         if let manager = _sharedManager {
             return manager
@@ -47,16 +49,21 @@ public class ResizinManager: NSObject {
             return ResizinManager(projectName: "", baseURL: Environment.production.url, clientKey: "")
         }
     }
-    
-    /**
-     Create and setup singleton instance of image manager.
-     - parameter projectName: URL path component to be appended to base URL
-     */
+
+    /// Create and setup singleton instance of image manager
+    ///
+    /// - Parameters:
+    ///   - projectName: URL path component to be appended to base URL
+    ///   - environment: Image server environment. Default: `.production`
+    ///   - clientKey: API client key
     public static func setupSharedManager(projectName: String, environment: Environment = Environment.production, clientKey: String) {
         _sharedManager = ResizinManager(projectName: projectName, baseURL: environment.url, clientKey: clientKey)
     }
     
+    /// Signleton manager instance
     private static var _sharedManager: ResizinManager?
+
+    // MARK: Initializers
     
     public init(projectName: String, baseURL: String, clientKey: String) {
         self.baseURL = baseURL

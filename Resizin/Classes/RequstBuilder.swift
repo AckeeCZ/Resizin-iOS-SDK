@@ -17,6 +17,7 @@ class RequestBuilder {
     /// Request boundary
     private let boundary = "Boundary-\(UUID().uuidString)"
 
+    /// Boundary with `--` prefix used in requests body
     private var prefixedBoundary: String {
         return "--\(boundary)"
     }
