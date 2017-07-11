@@ -19,7 +19,7 @@ public class ResizinManager: NSObject {
         
         var url: String {
             switch self {
-            case .production: return "https://img.resizin.com"
+            case .production: return "https://api.resizin.com/api/v1/image/upload"
             case .custom(let url): return url
             }
         }
