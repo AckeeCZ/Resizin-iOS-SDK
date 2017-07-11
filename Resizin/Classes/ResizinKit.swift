@@ -6,13 +6,13 @@
 //  Copyright © 2016 Ackee. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 
 /// Shared manager
 public class ResizinManager: NSObject {
-    
-    
+
     public enum Environment {
         case production
         case custom(String)
@@ -30,6 +30,9 @@ public class ResizinManager: NSObject {
     
     /// URL path component to be appended to base URL
     public var projectName: String
+
+    /// Image uploading service
+    private let uploader: Uploader
     
     /**
      Returns shared image manager.
@@ -41,7 +44,7 @@ public class ResizinManager: NSObject {
             return manager
         } else {
             assertionFailure("You must initialize sharedManager with setupSharedManagerWithProjectName(_) first!")
-            return ResizinManager(projectName: "", baseURL: Environment.production.url)
+            return ResizinManager(projectName: "", baseURL: Environment.production.url, clientKey: "")
         }
     }
     
@@ -49,31 +52,16 @@ public class ResizinManager: NSObject {
      Create and setup singleton instance of image manager.
      - parameter projectName: URL path component to be appended to base URL
      */
-    public static func setupSharedManager(projectName: String, baseURL: String) {
-        _sharedManager = ResizinManager(projectName: projectName, baseURL: baseURL)
-    }
-    
-    /**
-     Create and setup singleton instance of image manager.
-     - parameter projectName: URL path component to be appended to base URL
-     */
-    public static func setupSharedManager(projectName: String, environment: Environment) {
-        _sharedManager = ResizinManager(projectName: projectName, baseURL: environment.url)
-    }
-    
-    /**
-     Create and setup singleton instance of image manager.
-     - parameter projectName: URL path component to be appended to base URL
-     */
-    public static func setupSharedManager(projectName: String) {
-        setupSharedManager(projectName: projectName, environment: .production)
+    public static func setupSharedManager(projectName: String, environment: Environment = Environment.production, clientKey: String) {
+        _sharedManager = ResizinManager(projectName: projectName, baseURL: environment.url, clientKey: clientKey)
     }
     
     private static var _sharedManager: ResizinManager?
     
-    public init(projectName: String, baseURL: String) {
+    public init(projectName: String, baseURL: String, clientKey: String) {
         self.baseURL = baseURL
         self.projectName = projectName
+        self.uploader = Uploader(baseURL: URL(string: baseURL)!, clientKey: clientKey)
         
         super.init()
         
@@ -81,8 +69,6 @@ public class ResizinManager: NSObject {
             type(of: self)._sharedManager = self
         }
     }
-    
-    
     
     /// Returns builded url for specific image and options
     ///
@@ -106,5 +92,16 @@ public class ResizinManager: NSObject {
         
         return url.appendingPathComponent(key)
     }
-}
 
+    /// Uploads given image to Resizin server
+    ///
+    /// - Parameters:
+    ///   - image: Image which will be uploaded
+    ///   - name: Image name
+    ///   - completion: Upload callback
+    public func upload(image: UIImage, name: String, completion: ((Result<ImageReference, ResizinError>) -> Void)?) {
+        let location = "\(projectName)/\(name)"
+
+        uploader.upload(image: image, location: location, completion: completion)
+    }
+}
