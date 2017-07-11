@@ -13,10 +13,12 @@
 		D206C7D01F14C1F800D03133 /* ResizinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */; };
 		D206C7D11F14C1F800D03133 /* ImageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1E1F13C81200456C1B /* ImageReference.swift */; };
 		D206C7D21F14C1F800D03133 /* RequstBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */; };
+		D2B831061F14E4FB00784BB9 /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B831051F14E4FB00784BB9 /* Uploader.swift */; };
 		D2F2CE131F13BD7800456C1B /* Resizin.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F2CE101F13BD3C00456C1B /* Resizin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2B831051F14E4FB00784BB9 /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
 		D2F2CDFF1F13BCBE00456C1B /* Resizin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resizin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F2CE0F1F13BD3C00456C1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		D2F2CE101F13BD3C00456C1B /* Resizin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resizin.h; path = "Supporting Files/Resizin.h"; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */,
 				D2F2CE1E1F13C81200456C1B /* ImageReference.swift */,
 				D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */,
+				D2B831051F14E4FB00784BB9 /* Uploader.swift */,
 			);
 			name = Resizin;
 			path = Resizin/Classes;
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D206C7CF1F14C1F800D03133 /* Result.swift in Sources */,
+				D2B831061F14E4FB00784BB9 /* Uploader.swift in Sources */,
 				D206C7CD1F14C1F800D03133 /* ResizinKit.swift in Sources */,
 				D206C7CE1F14C1F800D03133 /* ResizinSettings.swift in Sources */,
 				D206C7D01F14C1F800D03133 /* ResizinError.swift in Sources */,
