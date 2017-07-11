@@ -11,17 +11,17 @@ import Foundation
 /// Uploaded image reference
 public struct ImageReference {
     /// Image identifier
-    let ID: Int
+    public let ID: Int
     /// Image key for API calls
-    let key: String
+    public let key: String
     /// Image size
-    let size: String
+    public let size: String
     /// Image mime type
-    let mimeType: String
+    public let mimeType: String
     /// Uploader client ID
-    let clientID: Int
+    public let clientID: Int
     /// Time when the image was updated
-    let updateTime: String
+    public let updateTime: String
 
     init?(from json: [String: Any]) {
         guard
