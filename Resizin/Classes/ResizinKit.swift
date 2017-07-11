@@ -16,15 +16,22 @@ public class ResizinManager: NSObject {
     /// Library server environment
     ///
     /// - production: Preset production environment
-    /// - custom: Custom server
+    /// - custom: Custom server (get URL, post URL)
     public enum Environment {
         case production
-        case custom(String)
+        case custom(URL, URL)
         
-        var url: String {
+        var get: URL {
             switch self {
-            case .production: return "https://api.resizin.com/api/v1/image/upload"
-            case .custom(let url): return url
+            case .production: return URL(string: "https://img.resizin.com")!
+            case .custom(let url, _): return url
+            }
+        }
+
+        var post: URL {
+            switch self {
+            case .production: return URL(string: "https://api.resizin.com/api/v1/image/upload")!
+            case .custom(_, let url): return url
             }
         }
     }
@@ -46,7 +53,7 @@ public class ResizinManager: NSObject {
             return manager
         } else {
             assertionFailure("You must initialize sharedManager with setupSharedManagerWithProjectName(_) first!")
-            return ResizinManager(projectName: "", baseURL: Environment.production.url, clientKey: "")
+            return ResizinManager(projectName: "", environment: .production, clientKey: "")
         }
     }
 
@@ -57,7 +64,7 @@ public class ResizinManager: NSObject {
     ///   - environment: Image server environment. Default: `.production`
     ///   - clientKey: API client key
     public static func setupSharedManager(projectName: String, environment: Environment = Environment.production, clientKey: String) {
-        _sharedManager = ResizinManager(projectName: projectName, baseURL: environment.url, clientKey: clientKey)
+        _sharedManager = ResizinManager(projectName: projectName, environment: environment, clientKey: clientKey)
     }
     
     /// Signleton manager instance
@@ -65,10 +72,10 @@ public class ResizinManager: NSObject {
 
     // MARK: Initializers
     
-    public init(projectName: String, baseURL: String, clientKey: String) {
-        self.baseURL = baseURL
+    public init(projectName: String, environment: Environment, clientKey: String) {
+        self.baseURL = environment.get
         self.projectName = projectName
-        self.uploader = Uploader(baseURL: URL(string: baseURL)!, clientKey: clientKey)
+        self.uploader = Uploader(baseURL: environment.post, clientKey: clientKey)
         
         super.init()
         
@@ -86,7 +93,7 @@ public class ResizinManager: NSObject {
     public func url(for key: String, settings: ResizinSettings = ResizinSettings()) -> URL {
         
         // "static" part of URL
-        var url = URL(string: "\(baseURL)/\(projectName)/image")!
+        var url = baseURL.appendingPathComponent(projectName).appendingPathComponent("image")
         
         // append all modifier according to given settings
         let modifiers = settings.modifiers
