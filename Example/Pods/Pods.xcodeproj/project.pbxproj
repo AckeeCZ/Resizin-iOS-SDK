@@ -15,9 +15,9 @@
 		30F1E691231842A1C6A12C16C40AF944 /* Pods-Resizin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C51968F2195BEFD4B104B93BE26ED3 /* Pods-Resizin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E02735C2E664B21221338F25EE6FD6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		45C3584404E76CEC85A33146F00E1BEB /* ResizinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F151EB2855C0C8B05F9D64E0E5A60079 /* ResizinError.swift */; };
-		698433581FD0422100F8E722 /* ResizinSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698433561FD03F1B00F8E722 /* ResizinSize.swift */; };
+		6982E1C41FD04EED001F2D31 /* ResizinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6982E1C31FD04EEC001F2D31 /* ResizinSettings.swift */; };
 		850B705E0CC60037E60CAD379CE5C6DB /* Resizin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 176FFCDE1959608B9BE414FF935B89B3 /* Resizin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F71F5A5AE193EC754B6657A7AB0775F /* ResizinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25301EA4395CA89664071619BECE7CD9 /* ResizinSettings.swift */; };
+		8F71F5A5AE193EC754B6657A7AB0775F /* ResizinSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25301EA4395CA89664071619BECE7CD9 /* ResizinSize.swift */; };
 		9E6BF049820DEFD88D114B18BAFE54D4 /* RequstBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F363D8A0FAB2409645D647382DAD64B /* RequstBuilder.swift */; };
 		B9A5C7ADF0C738E2C607230B6EF4652E /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727602F6E1E257EB2C986115F7F98F3 /* Uploader.swift */; };
 		E8A7C4FCB68911CBDCCF8E9BE3961106 /* ResizinKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494D2C290F69C50328AA5E0CEA4ACE5 /* ResizinKit.swift */; };
@@ -39,14 +39,14 @@
 		16857D051B5556A0674DD51278D1A57C /* Resizin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Resizin.xcconfig; sourceTree = "<group>"; };
 		175E47240C58E85B34482823D9FEA28F /* Pods-Resizin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Resizin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		176FFCDE1959608B9BE414FF935B89B3 /* Resizin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Resizin-umbrella.h"; sourceTree = "<group>"; };
-		25301EA4395CA89664071619BECE7CD9 /* ResizinSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResizinSettings.swift; path = Resizin/Classes/ResizinSettings.swift; sourceTree = "<group>"; };
+		25301EA4395CA89664071619BECE7CD9 /* ResizinSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResizinSize.swift; path = Resizin/Classes/ResizinSize.swift; sourceTree = "<group>"; };
 		2BA4B26AC3D521A9E4CFC932BB1C4F2B /* Pods-Resizin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Resizin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		352DA59B2CBB3FE24160C10FD176E7C7 /* Resizin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resizin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F363D8A0FAB2409645D647382DAD64B /* RequstBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequstBuilder.swift; path = Resizin/Classes/RequstBuilder.swift; sourceTree = "<group>"; };
 		4CF67C887876B1AC6737B9DFBBD4F876 /* Resizin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Resizin-prefix.pch"; sourceTree = "<group>"; };
 		5E25DCE608E854E4F7BA3FF8810E3DB4 /* Pods-Resizin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Resizin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		698433561FD03F1B00F8E722 /* ResizinSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizinSize.swift; sourceTree = "<group>"; };
+		6982E1C31FD04EEC001F2D31 /* ResizinSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResizinSettings.swift; path = Resizin/Classes/ResizinSettings.swift; sourceTree = "<group>"; };
 		6E48EA7CA5E779B0F381DADA2FE2C537 /* Pods-Resizin_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Resizin_Tests-resources.sh"; sourceTree = "<group>"; };
 		8E6DF5596C3CA7EE8F7275BD270D3036 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -91,11 +91,11 @@
 				3F363D8A0FAB2409645D647382DAD64B /* RequstBuilder.swift */,
 				F151EB2855C0C8B05F9D64E0E5A60079 /* ResizinError.swift */,
 				D494D2C290F69C50328AA5E0CEA4ACE5 /* ResizinKit.swift */,
-				25301EA4395CA89664071619BECE7CD9 /* ResizinSettings.swift */,
+				6982E1C31FD04EEC001F2D31 /* ResizinSettings.swift */,
+				25301EA4395CA89664071619BECE7CD9 /* ResizinSize.swift */,
 				F8454B9A8715EF39738F4D58327FA021 /* Result.swift */,
 				9727602F6E1E257EB2C986115F7F98F3 /* Uploader.swift */,
 				8FA9D0D6C287E623D1E44D77F1D48994 /* Support Files */,
-				698433561FD03F1B00F8E722 /* ResizinSize.swift */,
 			);
 			name = Resizin;
 			path = ../..;
@@ -280,12 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF044C3E7601448092553C95320DD33 /* ImageReference.swift in Sources */,
+				6982E1C41FD04EED001F2D31 /* ResizinSettings.swift in Sources */,
 				9E6BF049820DEFD88D114B18BAFE54D4 /* RequstBuilder.swift in Sources */,
 				27B414665ABC3DD8D5739DE987CA6F19 /* Resizin-dummy.m in Sources */,
 				45C3584404E76CEC85A33146F00E1BEB /* ResizinError.swift in Sources */,
 				E8A7C4FCB68911CBDCCF8E9BE3961106 /* ResizinKit.swift in Sources */,
-				698433581FD0422100F8E722 /* ResizinSize.swift in Sources */,
-				8F71F5A5AE193EC754B6657A7AB0775F /* ResizinSettings.swift in Sources */,
+				8F71F5A5AE193EC754B6657A7AB0775F /* ResizinSize.swift in Sources */,
 				12453CA7ED31FC7DAB13B987FAEFBED0 /* Result.swift in Sources */,
 				B9A5C7ADF0C738E2C607230B6EF4652E /* Uploader.swift in Sources */,
 			);
