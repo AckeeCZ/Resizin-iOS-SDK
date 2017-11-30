@@ -48,8 +48,8 @@ public class ResizinManager: NSObject {
     /// Returns shared image manager.
     ///
     /// **You must call setupSharedManagerWithProjectName(_) before use!**
-    public static var sharedManager: ResizinManager {
-        if let manager = _sharedManager {
+    public static var shared: ResizinManager {
+        if let manager = _shared {
             return manager
         } else {
             assertionFailure("You must initialize sharedManager with setupSharedManagerWithProjectName(_) first!")
@@ -64,11 +64,11 @@ public class ResizinManager: NSObject {
     ///   - environment: Image server environment. Default: `.production`
     ///   - clientKey: API client key
     public static func setupSharedManager(projectName: String, environment: Environment = Environment.production, clientKey: String) {
-        _sharedManager = ResizinManager(projectName: projectName, environment: environment, clientKey: clientKey)
+        _shared = ResizinManager(projectName: projectName, environment: environment, clientKey: clientKey)
     }
     
     /// Signleton manager instance
-    private static var _sharedManager: ResizinManager?
+    private static var _shared: ResizinManager?
 
     // MARK: Initializers
     
@@ -79,8 +79,8 @@ public class ResizinManager: NSObject {
         
         super.init()
         
-        if type(of: self)._sharedManager == nil {
-            type(of: self)._sharedManager = self
+        if type(of: self)._shared == nil {
+            type(of: self)._shared = self
         }
     }
     
