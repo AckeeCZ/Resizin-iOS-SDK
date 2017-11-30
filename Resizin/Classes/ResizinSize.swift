@@ -34,7 +34,7 @@ public struct ResizinSize {
     /// - Parameters:
     ///   - width: Desired width of the image in points
     ///   - scale: Desired scale used to compute image size in pixels
-    init(width: Int, scale: Int) {
+    public init(width: Int, scale: Int) {
         self.width = width
         self.height = nil
         self.scale = scale
@@ -45,7 +45,7 @@ public struct ResizinSize {
     /// - Parameters:
     ///   - height: Desired height of the image in points
     ///   - scale: Desired scale used to compute image size in pixels
-    init(height: Int, scale: Int) {
+    public init(height: Int, scale: Int) {
         self.width = nil
         self.height = height
         self.scale = scale
@@ -57,7 +57,7 @@ public struct ResizinSize {
     ///   - width: Desired width of the image in points
     ///   - height: Desired height of the image in points
     ///   - scale: Desired scale used to compute image size in pixels
-    init(width: Int, height: Int, scale: Int) {
+    public init(width: Int, height: Int, scale: Int) {
         self.width = width
         self.height = height
         self.scale = scale
@@ -68,7 +68,7 @@ public struct ResizinSize {
     /// - Parameters:
     ///   - size: Desired size of the image in points
     ///   - scale: Desired scale used to compute image size in pixels
-    init(size: Int, scale: Int) {
+    public init(size: Int, scale: Int) {
         self.width = nil
         self.height = nil
         self.scale = scale
@@ -79,7 +79,7 @@ public struct ResizinSize {
     /// - Parameters:
     ///   - cgSize: Desired size of the image in points
     ///   - scale: Desired scale used to compute image size in pixels
-    init(cgSize: CGSize, scale: Int) {
+    public init(cgSize: CGSize, scale: Int) {
         self.width = Int(cgSize.width)
         self.height = Int(cgSize.height)
         self.scale = scale
