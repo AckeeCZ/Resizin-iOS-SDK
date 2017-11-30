@@ -69,15 +69,9 @@ public struct ResizinSettings {
     }
     
     // MARK: Properties
-
-    /// Desired width of the image in pixels
-    public var width: Int? = nil
     
-    /// Width and height of the image in pixels
-    public var size: Int? = nil
-    
-    /// Height of the image in pixels
-    public var height: Int? = nil
+    /// Desired image size in points
+    public var size: ResizinSize? = nil
     
     /// CropMode
     public var cropMode: CropMode? = nil
@@ -137,10 +131,8 @@ public struct ResizinSettings {
     ///   - background: Background color of the image in hex format without #
     ///   - alpha: Alpha value of background color (0-100)
     ///   - border: Image border
-    public init(width: Int? = nil, height: Int? = nil, size: Int? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil) {
+    public init(size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil) {
         self.size = size
-        self.width = width
-        self.height = height
         self.cropMode = cropMode
         self.gravity = gravity
         self.filters = filters
@@ -159,10 +151,7 @@ public struct ResizinSettings {
         var modifiers: [String] = []
         
         if let size = size {
-            modifiers.append("s_\(size)")
-        } else {
-            if let width = width { modifiers.append("w_\(width)") }
-            if let height = height { modifiers.append("h_\(height)") }
+            modifiers += size.modifiers
         }
         if let cropMode = cropMode { modifiers.append("c_\(cropMode.rawValue)") }
         if let gravity = gravity { modifiers.append("g_\(gravity.rawValue)") }

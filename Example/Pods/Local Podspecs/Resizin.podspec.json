@@ -1,19 +1,19 @@
 {
   "name": "Resizin",
-  "version": "0.1.0",
-  "summary": "A short description of Resizin.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Tomas Holka/Resizin",
+  "version": "0.2.0",
+  "summary": "Resizin iOS SDK",
+  "description": "Manipulate with images",
+  "homepage": "https://github.com/AckeeCZ/Resizin-iOS-SDK",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Tomas Holka": "tomas.holka@ackee.cz"
+    "Jan Mísař": "misar.jan@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Tomas Holka/Resizin.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/AckeeCZ/Resizin-iOS-SDK.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
