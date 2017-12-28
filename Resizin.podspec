@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Resizin'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'Resizin iOS SDK'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Manipulate with images
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Resizin/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'Resizin' => ['Resizin/Assets/*.png']
   # }

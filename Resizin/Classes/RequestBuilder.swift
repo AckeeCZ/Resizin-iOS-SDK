@@ -1,5 +1,5 @@
 //
-//  RequstBuilder.swift
+//  RequestBuilder.swift
 //  Resizin
 //
 //  Created by Josef Dolezal on 10/07/2017.

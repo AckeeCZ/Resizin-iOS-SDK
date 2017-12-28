@@ -7,17 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69B3BAB31FF458D100BABE6B /* ResizinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3BAB21FF458D100BABE6B /* ResizinTests.swift */; };
+		69B3BAB51FF458D100BABE6B /* Resizin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F2CDFF1F13BCBE00456C1B /* Resizin.framework */; };
+		69B3BABC1FF4590200BABE6B /* ResizinSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3BABB1FF4590200BABE6B /* ResizinSize.swift */; };
 		D206C7CD1F14C1F800D03133 /* ResizinKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE141F13C35C00456C1B /* ResizinKit.swift */; };
 		D206C7CE1F14C1F800D03133 /* ResizinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE151F13C35C00456C1B /* ResizinSettings.swift */; };
 		D206C7CF1F14C1F800D03133 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1A1F13C61500456C1B /* Result.swift */; };
 		D206C7D01F14C1F800D03133 /* ResizinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */; };
 		D206C7D11F14C1F800D03133 /* ImageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE1E1F13C81200456C1B /* ImageReference.swift */; };
-		D206C7D21F14C1F800D03133 /* RequstBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */; };
+		D206C7D21F14C1F800D03133 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2CE201F13CCC400456C1B /* RequestBuilder.swift */; };
 		D2B831061F14E4FB00784BB9 /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B831051F14E4FB00784BB9 /* Uploader.swift */; };
 		D2F2CE131F13BD7800456C1B /* Resizin.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F2CE101F13BD3C00456C1B /* Resizin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		69B3BAB61FF458D100BABE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2F2CDF61F13BCBE00456C1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2F2CDFE1F13BCBE00456C1B;
+			remoteInfo = Resizin;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		69B3BAB01FF458D100BABE6B /* ResizinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResizinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69B3BAB21FF458D100BABE6B /* ResizinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizinTests.swift; sourceTree = "<group>"; };
+		69B3BAB41FF458D100BABE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B3BABB1FF4590200BABE6B /* ResizinSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizinSize.swift; sourceTree = "<group>"; };
 		D2B831051F14E4FB00784BB9 /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
 		D2F2CDFF1F13BCBE00456C1B /* Resizin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resizin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F2CE0F1F13BD3C00456C1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
@@ -27,10 +44,18 @@
 		D2F2CE1A1F13C61500456C1B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizinError.swift; sourceTree = "<group>"; };
 		D2F2CE1E1F13C81200456C1B /* ImageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageReference.swift; sourceTree = "<group>"; };
-		D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequstBuilder.swift; sourceTree = "<group>"; };
+		D2F2CE201F13CCC400456C1B /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		69B3BAAD1FF458D100BABE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B3BAB51FF458D100BABE6B /* Resizin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F2CDFB1F13BCBE00456C1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,11 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69B3BAB11FF458D100BABE6B /* ResizinTests */ = {
+			isa = PBXGroup;
+			children = (
+				69B3BAB21FF458D100BABE6B /* ResizinTests.swift */,
+				69B3BAB41FF458D100BABE6B /* Info.plist */,
+			);
+			path = ResizinTests;
+			sourceTree = "<group>";
+		};
 		D2F2CDF51F13BCBE00456C1B = {
 			isa = PBXGroup;
 			children = (
-				D2F2CE0A1F13BCF600456C1B /* Supporting Files */,
 				D2F2CE011F13BCBE00456C1B /* Resizin */,
+				69B3BAB11FF458D100BABE6B /* ResizinTests */,
+				D2F2CE0A1F13BCF600456C1B /* Supporting Files */,
 				D2F2CE001F13BCBE00456C1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F2CDFF1F13BCBE00456C1B /* Resizin.framework */,
+				69B3BAB01FF458D100BABE6B /* ResizinTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,12 +97,13 @@
 		D2F2CE011F13BCBE00456C1B /* Resizin */ = {
 			isa = PBXGroup;
 			children = (
+				69B3BABB1FF4590200BABE6B /* ResizinSize.swift */,
 				D2F2CE141F13C35C00456C1B /* ResizinKit.swift */,
 				D2F2CE151F13C35C00456C1B /* ResizinSettings.swift */,
 				D2F2CE1A1F13C61500456C1B /* Result.swift */,
 				D2F2CE1C1F13C7CC00456C1B /* ResizinError.swift */,
 				D2F2CE1E1F13C81200456C1B /* ImageReference.swift */,
-				D2F2CE201F13CCC400456C1B /* RequstBuilder.swift */,
+				D2F2CE201F13CCC400456C1B /* RequestBuilder.swift */,
 				D2B831051F14E4FB00784BB9 /* Uploader.swift */,
 			);
 			name = Resizin;
@@ -97,6 +134,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		69B3BAAF1FF458D100BABE6B /* ResizinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B3BABA1FF458D100BABE6B /* Build configuration list for PBXNativeTarget "ResizinTests" */;
+			buildPhases = (
+				69B3BAAC1FF458D100BABE6B /* Sources */,
+				69B3BAAD1FF458D100BABE6B /* Frameworks */,
+				69B3BAAE1FF458D100BABE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69B3BAB71FF458D100BABE6B /* PBXTargetDependency */,
+			);
+			name = ResizinTests;
+			productName = ResizinTests;
+			productReference = 69B3BAB01FF458D100BABE6B /* ResizinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D2F2CDFE1F13BCBE00456C1B /* Resizin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2F2CE071F13BCBE00456C1B /* Build configuration list for PBXNativeTarget "Resizin" */;
@@ -121,13 +176,18 @@
 		D2F2CDF61F13BCBE00456C1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Ackee;
 				TargetAttributes = {
+					69B3BAAF1FF458D100BABE6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
 					D2F2CDFE1F13BCBE00456C1B = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -144,11 +204,19 @@
 			projectRoot = "";
 			targets = (
 				D2F2CDFE1F13BCBE00456C1B /* Resizin */,
+				69B3BAAF1FF458D100BABE6B /* ResizinTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		69B3BAAE1FF458D100BABE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F2CDFD1F13BCBE00456C1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +227,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		69B3BAAC1FF458D100BABE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B3BAB31FF458D100BABE6B /* ResizinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2F2CDFA1F13BCBE00456C1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,16 +242,77 @@
 				D206C7CF1F14C1F800D03133 /* Result.swift in Sources */,
 				D2B831061F14E4FB00784BB9 /* Uploader.swift in Sources */,
 				D206C7CD1F14C1F800D03133 /* ResizinKit.swift in Sources */,
+				69B3BABC1FF4590200BABE6B /* ResizinSize.swift in Sources */,
 				D206C7CE1F14C1F800D03133 /* ResizinSettings.swift in Sources */,
 				D206C7D01F14C1F800D03133 /* ResizinError.swift in Sources */,
 				D206C7D11F14C1F800D03133 /* ImageReference.swift in Sources */,
-				D206C7D21F14C1F800D03133 /* RequstBuilder.swift in Sources */,
+				D206C7D21F14C1F800D03133 /* RequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		69B3BAB71FF458D100BABE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2F2CDFE1F13BCBE00456C1B /* Resizin */;
+			targetProxy = 69B3BAB61FF458D100BABE6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		69B3BAB81FF458D100BABE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ResizinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.ackee.ResizinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69B3BAB91FF458D100BABE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ResizinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.ackee.ResizinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D2F2CE051F13BCBE00456C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,15 +419,19 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Resizin/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.ackee.Resizin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -302,15 +443,19 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Resizin/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.ackee.Resizin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -319,6 +464,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		69B3BABA1FF458D100BABE6B /* Build configuration list for PBXNativeTarget "ResizinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B3BAB81FF458D100BABE6B /* Debug */,
+				69B3BAB91FF458D100BABE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2F2CDF91F13BCBE00456C1B /* Build configuration list for PBXProject "Resizin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
