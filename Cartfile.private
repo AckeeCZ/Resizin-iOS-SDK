@@ -1,0 +1,3 @@
+github "AckeeCZ/ACKategories" ~> 5.1
+github "Alamofire/AlamofireImage" ~> 3.3
+github "SnapKit/SnapKit" ~> 3.2
