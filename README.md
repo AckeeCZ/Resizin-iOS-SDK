@@ -5,9 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
 [![Platform](https://img.shields.io/cocoapods/p/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Resizin is iOS SDK for Ackee's image server [resizin.com](https://resizin.com)
 
 ## Requirements
 
