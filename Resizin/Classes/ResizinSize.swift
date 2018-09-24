@@ -24,7 +24,7 @@ public struct ResizinSize {
             return ["s_\(width * scale)"]
         }
         
-        return [width.map { "w_\($0 * scale)" }, height.map { "h_\($0 * scale)" }].flatMap { $0 }
+        return [width.map { "w_\($0 * scale)" }, height.map { "h_\($0 * scale)" }].compactMap { $0 }
     }
     
     /// MARK: Inits

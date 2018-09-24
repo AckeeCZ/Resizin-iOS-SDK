@@ -1,14 +1,29 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
-osx_image: xcode8.2
+osx_image: xcode10
 language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+env:
+  global:
+  - FRAMEWORK_NAME=Resizin
+cache:
+  directories:
+  - Carthage
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_script:
+- carthage bootstrap --platform iOS --cache-builds
+before_deploy:
+- carthage build --no-skip-current --platform iOS --cache-builds
+- carthage archive $FRAMEWORK_NAME
+- pod trunk push
 script:
-- set -o pipefail && xcodebuild test -scheme Resizin -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -scheme Resizin -destination 'platform=iOS Simulator,name=iPhone XS,OS=12.0' ONLY_ACTIVE_ARCH=YES | xcpretty
 - pod lib lint
+deploy:
+  provider: releases
+  api_key:
+    secure: qRLt2vR8oVQMaNtp3BHCM+D6XavoleLvMErehW8TXDIziBQ/KVRY9sdyCJ9aehH5tQ9w0OwG3Hc2hdPQ55SnUZnanSkI5prXCtbRoMt2GkslyQCXE89JmFngv37voYlECWCAJgETqbdN2N/XuPIqHWTum+mTGqVeqNNBstjnECQqQ4wewqSm91XahMhOX+RNljD0ooLRQUJRRAsKDDGY/VuwYqLUtTu9RuIqHPCJbRmqsoeRaScUNSW6qBAt8njCXGtMqDuw0d0V4+ONv85VKzDeJvMCgem2BnNp9xgpRiejd5rBIEqZ3W4N2euvrunzxACnv1ieu4dmLHseeasc4Jr1LnivDk6xjANQVgmFPobKJGYPp/xixmUz7IwMxIwHPkztq/k4CQ1OOT+xXs3QeQNB5mwOdpz+ZT2oWIKXZrXjPiJySsK0xZHGODQhhWgG57LCsfnY9Bm166txlQGEcWL7HGVY+ThfNqlWsVgiApGwiiAwM4YkdbJEBQ7oJz4kn7NiRi1WACEjywA9CzjpQCktfJSB/a6x8aqINuAWsvsrqrN2tBTeXatrcFj9AslbDtZQHH9qpIdjFSaU3bRyam6X2Q/Li6p5J+4gRZDj+Z4ddmHZu1uJeE4G/Yf9zXb/TKBOQDjc13dV7iCULkGw8V5sj3WNGR5ZH/fn9Xf4354=
+  file: "$FRAMEWORK_NAME"
+  skip_cleanup: true
+  on:
+    repo: AckeeCZ/Resizin-iOS-SDK
+    tags: true
