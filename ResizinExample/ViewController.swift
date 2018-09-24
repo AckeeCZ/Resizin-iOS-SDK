@@ -16,7 +16,7 @@ final class ViewController: UIViewController, UITableViewDataSource {
     private weak var tableView: UITableView!
     
     private let settingsData = [
-        (title: "Crop mode: .fill", settings: ResizinSettings(size: Constants.resizinSize, cropMode: .fill), contentMode: UIViewContentMode.scaleAspectFill),
+        (title: "Crop mode: .fill", settings: ResizinSettings(size: Constants.resizinSize, cropMode: .fill), contentMode: UIView.ContentMode.scaleAspectFill),
         (title: "Crop mode: .fit", settings: ResizinSettings(size: Constants.resizinSize, cropMode: .fit), contentMode: .scaleAspectFit)
     ]
     

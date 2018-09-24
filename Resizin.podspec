@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Resizin'
-  s.version          = '0.3.2'
+  s.version          = '0.4.0'
   s.summary          = 'Resizin iOS SDK'
   s.description      = <<-DESC
 Manipulate with images
@@ -11,5 +11,5 @@ Manipulate with images
   s.source           = { :git => 'https://github.com/AckeeCZ/Resizin-iOS-SDK.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files     = 'Resizin/Classes/**/*.swift'
-  s.swift_version    = '4.0' 
+  s.swift_version    = '4.2'
 end

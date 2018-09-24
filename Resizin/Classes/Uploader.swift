@@ -40,7 +40,7 @@ class Uploader {
     ///   - name: Image name
     ///   - completion: Upload callback
     public func upload(image: UIImage, location: String, completion: ((UploadResult) -> Void)?) {
-        guard let imageData = UIImagePNGRepresentation(image) else {
+        guard let imageData = image.pngData() else {
             completion?(.failure(.invalidImageData))
             return
         }
