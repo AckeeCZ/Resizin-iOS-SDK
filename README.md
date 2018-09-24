@@ -1,7 +1,8 @@
 # Resizin
 
-[![Version](https://img.shields.io/cocoapods/v/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
+[![Build Status](https://travis-ci.com/AckeeCZ/Resizin-iOS-SDK.svg?branch=master)](https://travis-ci.com/AckeeCZ/Resizin-iOS-SDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/cocoapods/v/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
 [![License](https://img.shields.io/cocoapods/l/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
 [![Platform](https://img.shields.io/cocoapods/p/Resizin.svg?style=flat)](http://cocoapods.org/pods/Resizin)
 
