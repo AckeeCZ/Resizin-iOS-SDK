@@ -20,10 +20,6 @@ public struct ResizinSize {
     public let scale: Int
     
     internal var modifiers: [String] {
-        if let width = width, let height = height, width == height {
-            return ["s_\(width * scale)"]
-        }
-        
         return [width.map { "w_\($0 * scale)" }, height.map { "h_\($0 * scale)" }].compactMap { $0 }
     }
     
