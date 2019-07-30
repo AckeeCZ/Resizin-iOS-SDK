@@ -8,5 +8,7 @@
 
 ## master
 
+## 0.5
+
 - remove automatic conversion of same width and height to square parameter in URL (#10, kudos to @olejnjak)
 - update Xcode version to 10.2 (#10, kudos to @olejnjak)
