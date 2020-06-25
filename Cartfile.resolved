@@ -1,4 +1,4 @@
-github "AckeeCZ/ACKategories" "6.1.2"
-github "Alamofire/Alamofire" "4.8.2"
-github "Alamofire/AlamofireImage" "3.5.2"
-github "SnapKit/SnapKit" "4.2.0"
+github "AckeeCZ/ACKategories" "6.5.1"
+github "Alamofire/Alamofire" "4.9.1"
+github "Alamofire/AlamofireImage" "3.6.0"
+github "SnapKit/SnapKit" "5.0.1"
