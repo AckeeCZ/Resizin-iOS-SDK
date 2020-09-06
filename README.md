@@ -56,6 +56,7 @@ You can request various transformations:
 - background color
 - alpha
 - border
+- output format
 
 ```swift
 let size = ResizinSize(cgSize: CGSize(width: 100, height: 200), scale: Int(UIScreen.main.scale))
