@@ -59,6 +59,14 @@ public struct ResizinSettings {
         case right = "90"
         case down = "180"
     }
+    
+    /// Returns the image transformed in selected format
+    public enum OutputFormat: String {
+        case jpeg
+        case png
+        case tiff
+        case webp
+    }
 
     /// Adds border (in pixels) to desired sides of the image
     public struct Border {
@@ -114,6 +122,11 @@ public struct ResizinSettings {
         }
     }
     
+    /// Output format
+    ///
+    /// `nil` value returns image in original format
+    public var outputFormat: OutputFormat?
+    
     // MARK: Inits
 
     /// Initializes a new settings for image modifications. All parameters are optional
@@ -131,7 +144,8 @@ public struct ResizinSettings {
     ///   - background: Background color of the image in hex format without #
     ///   - alpha: Alpha value of background color (0-100)
     ///   - border: Image border
-    public init(size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil) {
+    ///   - outputFormat: Output format
+    public init(size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil, outputFormat: OutputFormat? = nil) {
         self.size = size
         self.cropMode = cropMode
         self.gravity = gravity
@@ -142,6 +156,7 @@ public struct ResizinSettings {
         self.background = background
         self.alpha = alpha
         self.border = border
+        self.outputFormat = outputFormat
     }
     
     // MARK: Helpers
@@ -165,6 +180,8 @@ public struct ResizinSettings {
         if let upscale = upscale { modifiers.append("u_\(upscale ? 1 : 0)")}
         if let background = background { modifiers.append("bg_\(background)\(alpha)") }
         if let border = border { modifiers.append("b_\(border.top)_\(border.left)_\(border.bottom)_\(border.right)") }
+        if let outputFormat = outputFormat {
+            modifiers.append("o_\(outputFormat)") }
         return modifiers
     }
 }
