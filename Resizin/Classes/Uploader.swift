@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 /// Image uploading helper
-class Uploader {
+final class Uploader {
     typealias UploadResult = Result<ImageReference, ResizinError>
 
     /// Requests base URL

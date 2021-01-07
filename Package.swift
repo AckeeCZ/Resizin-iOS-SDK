@@ -5,7 +5,6 @@ let package = Package(
     name: "Resizin",
     platforms: [
         .iOS(.v9),
-        .macOS("10.9"),
     ],
     products: [
         .library(
