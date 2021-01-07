@@ -8,6 +8,8 @@
 
 ## master
 
+- Add support for SPM ([#12](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/12), kudos to [@fortmarek](https://github.com/fortmarek))
+
 ## 0.5
 
 - remove automatic conversion of same width and height to square parameter in URL (#10, kudos to @olejnjak)
