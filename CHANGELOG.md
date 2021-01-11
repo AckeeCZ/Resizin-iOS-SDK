@@ -9,6 +9,7 @@
 ## master
 
 - Add support for SPM ([#12](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/12), kudos to [@fortmarek](https://github.com/fortmarek))
+- Add output format modifier ([#13](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/13), kudos to [@leinhauplk](https://github.com/leinhauplk))
 
 ## 0.5
 
