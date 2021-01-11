@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Struct for defining image size and scale in points
 public struct ResizinSize {

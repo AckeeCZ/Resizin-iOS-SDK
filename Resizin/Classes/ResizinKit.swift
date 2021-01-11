@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 /// Shared manager
 public class ResizinManager: NSObject {
 
