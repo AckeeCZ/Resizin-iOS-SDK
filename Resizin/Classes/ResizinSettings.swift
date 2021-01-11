@@ -60,7 +60,7 @@ public struct ResizinSettings {
         case down = "180"
     }
     
-    /// Returns the image transformed in selected format
+    /// Returns the image transformed into the selected format
     public enum OutputFormat: String {
         case jpeg
         case png
