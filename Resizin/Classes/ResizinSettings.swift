@@ -145,9 +145,7 @@ public struct ResizinSettings {
     }
     
     /// Output format
-    ///
-    /// `nil` value returns image in original format
-    public var outputFormat: OutputFormat?
+    public var outputFormat: OutputFormat
     
     // MARK: Inits
 
@@ -167,7 +165,7 @@ public struct ResizinSettings {
     ///   - alpha: Alpha value of background color (0-100)
     ///   - border: Image border
     ///   - outputFormat: Output format
-    public init(size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil, outputFormat: OutputFormat? = nil) {
+    public init(outputFormat: OutputFormat, size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil) {
         self.size = size
         self.cropMode = cropMode
         self.gravity = gravity
@@ -186,6 +184,10 @@ public struct ResizinSettings {
     /// Modifiers that will be applied on the image
     public var modifiers : [String] {
         var modifiers: [String] = []
+
+        if let outputFormat = outputFormat.stringValue {
+            modifiers.append("o_" + outputFormat)
+        }
         
         if let size = size {
             modifiers += size.modifiers
@@ -202,8 +204,6 @@ public struct ResizinSettings {
         if let upscale = upscale { modifiers.append("u_\(upscale ? 1 : 0)")}
         if let background = background { modifiers.append("bg_\(background)\(alpha)") }
         if let border = border { modifiers.append("b_\(border.top)_\(border.left)_\(border.bottom)_\(border.right)") }
-        if let outputFormat = outputFormat {
-            modifiers.append("o_\(outputFormat)") }
         return modifiers
     }
 }
