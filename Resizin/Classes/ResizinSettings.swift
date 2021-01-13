@@ -61,11 +61,33 @@ public struct ResizinSettings {
     }
     
     /// Returns the image transformed into the selected format
-    public enum OutputFormat: String {
+    public enum OutputFormat {
+        /// Returns image in original format
+        case original
+        /// Returns image in `JPEG` format
         case jpeg
+        /// Returns image in `PNG` format
         case png
+        /// Returns image in `TIFF` format
         case tiff
+        @available(iOS 14.0, *)
+        /// Returns image in `WEBP` format
         case webp
+        
+        var stringValue: String? {
+            switch self {
+            case .jpeg:
+                return "jpeg"
+            case .png:
+                return "png"
+            case .tiff:
+                return "tiff"
+            case .webp:
+                return "webp"
+            case .original:
+                return nil
+            }
+        }
     }
 
     /// Adds border (in pixels) to desired sides of the image
