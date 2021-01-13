@@ -59,6 +59,36 @@ public struct ResizinSettings {
         case right = "90"
         case down = "180"
     }
+    
+    /// Returns the image transformed into the selected format
+    public enum OutputFormat {
+        /// Returns image in original format
+        case original
+        /// Returns image in `JPEG` format
+        case jpeg
+        /// Returns image in `PNG` format
+        case png
+        /// Returns image in `TIFF` format
+        case tiff
+        @available(iOS 14.0, *)
+        /// Returns image in `WEBP` format
+        case webp
+        
+        var stringValue: String? {
+            switch self {
+            case .jpeg:
+                return "jpeg"
+            case .png:
+                return "png"
+            case .tiff:
+                return "tiff"
+            case .webp:
+                return "webp"
+            case .original:
+                return nil
+            }
+        }
+    }
 
     /// Adds border (in pixels) to desired sides of the image
     public struct Border {
@@ -114,6 +144,9 @@ public struct ResizinSettings {
         }
     }
     
+    /// Output format
+    public var outputFormat: OutputFormat
+    
     // MARK: Inits
 
     /// Initializes a new settings for image modifications. All parameters are optional
@@ -131,7 +164,8 @@ public struct ResizinSettings {
     ///   - background: Background color of the image in hex format without #
     ///   - alpha: Alpha value of background color (0-100)
     ///   - border: Image border
-    public init(size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil) {
+    ///   - outputFormat: Output format
+    public init(size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil, outputFormat: OutputFormat = .original) {
         self.size = size
         self.cropMode = cropMode
         self.gravity = gravity
@@ -142,6 +176,7 @@ public struct ResizinSettings {
         self.background = background
         self.alpha = alpha
         self.border = border
+        self.outputFormat = outputFormat
     }
     
     // MARK: Helpers
@@ -149,6 +184,10 @@ public struct ResizinSettings {
     /// Modifiers that will be applied on the image
     public var modifiers : [String] {
         var modifiers: [String] = []
+
+        if let outputFormat = outputFormat.stringValue {
+            modifiers.append("o_" + outputFormat)
+        }
         
         if let size = size {
             modifiers += size.modifiers
