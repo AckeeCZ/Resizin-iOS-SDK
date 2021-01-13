@@ -165,7 +165,7 @@ public struct ResizinSettings {
     ///   - alpha: Alpha value of background color (0-100)
     ///   - border: Image border
     ///   - outputFormat: Output format
-    public init(outputFormat: OutputFormat, size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil) {
+    public init(size: ResizinSize? = nil, cropMode: CropMode? = nil, gravity: Gravity? = nil, filters: [Filter]? = nil, quality: Int? = nil, rotation: Rotation? = nil, upscale: Bool? = nil, background: String? = nil, alpha: Int = 100, border: Border? = nil, outputFormat: OutputFormat = .original) {
         self.size = size
         self.cropMode = cropMode
         self.gravity = gravity
