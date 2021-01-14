@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Resizin'
-  s.version          = '0.5'
+  s.version          = '0.6'
   s.summary          = 'Resizin iOS SDK'
   s.description      = <<-DESC
 Manipulate with images
