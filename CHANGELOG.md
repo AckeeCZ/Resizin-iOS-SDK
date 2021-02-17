@@ -8,6 +8,8 @@
 
 ## master
 
+- Update Xcode to 12.4 ([#14](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/14), kudos to [@olejnjak](https://github.com/olejnjak))
+
 ## 0.6.0
 
 - Add support for SPM ([#12](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/12), kudos to [@fortmarek](https://github.com/fortmarek))
