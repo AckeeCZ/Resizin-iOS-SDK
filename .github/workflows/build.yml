@@ -1,10 +1,10 @@
-name: Tests
+name: Build
 
 on: [pull_request, push]
 
 jobs:
   tests:
-    name: Run tests
+    name: Build
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,5 +19,5 @@ jobs:
         env:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: carthage bootstrap --platform iOS --cache-builds --use-xcframeworks
-      - name: Run tests
-        run: set -o pipefail && xcodebuild test -scheme Resizin -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest' ONLY_ACTIVE_ARCH=YES | xcpretty
+      - name: Build
+        run: carthage build --platform iOS --cache-builds --use-xcframeworks --no-skip-current
