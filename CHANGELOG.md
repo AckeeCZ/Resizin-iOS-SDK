@@ -9,6 +9,7 @@
 ## master
 
 - Update Xcode to 12.4 ([#14](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/14), kudos to [@olejnjak](https://github.com/olejnjak))
+- Set `APPLICATION_EXTENSION_API_ONLY` to `true` ([#16](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/16), kudos to [@leinhauplk](https://github.com/leinhauplk))
 
 ## 0.6.0
 
