@@ -31,7 +31,7 @@ final class ViewController: UIViewController, UITableViewDataSource {
         tableView.allowsSelection = false
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(safeArea)
+            make.edges.equalTo(view.safeAreaLayoutGuide)
         }
         self.tableView = tableView
     }
@@ -52,7 +52,7 @@ final class ViewController: UIViewController, UITableViewDataSource {
         let imageURL = ResizinManager.shared.url(for: Constants.imageKey, settings: cellData.settings)
         cell.titleLabel.text = cellData.title
         cell.imageView2.contentMode = cellData.contentMode
-        cell.imageView2.af_setImage(withURL: imageURL)
+        cell.imageView2.af.setImage(withURL: imageURL)
         return cell
     }
     
