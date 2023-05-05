@@ -6,9 +6,9 @@
 - <description> (#<PR_number>, kudos to @<author>)
 ```
 
-## master
+## 0.7.0
 
-- Update Xcode to 12.4 ([#14](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/14), kudos to [@olejnjak](https://github.com/olejnjak))
+- Update to Xcode 14.3 (kudos to [@LukasHromadnik](https://github.com/LukasHromadnik))
 - Set `APPLICATION_EXTENSION_API_ONLY` to `true` ([#16](https://github.com/AckeeCZ/Resizin-iOS-SDK/pull/16), kudos to [@leinhauplk](https://github.com/leinhauplk))
 
 ## 0.6.0

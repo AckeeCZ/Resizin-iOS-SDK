@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Resizin",
     platforms: [
-        .iOS(.v9),
+        .iOS(.v11),
     ],
     products: [
         .library(
